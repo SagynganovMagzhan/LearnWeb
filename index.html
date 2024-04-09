@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <p>
+            <i>Пожалуйста заполните форму. Обязательные поля отмечены </i><em>*</em>
+        </p>
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <label for="name">Имя <em>*</em></label>
+            <input id="name" placeholder="Введите имя" required/><br />
+            <label for="phone">Номер телефона</label>
+            <input id="phone" placeholder="Введите номер телефона" required/><br />
+            <label for="email">Электронный адрес <em>*</em></label>
+            <input id="email" placeholder="Введите электронный адрес" required/><br />
+        </fieldset>
+        <fieldset>
+            <legend>Персональные данные</legend>
+            <label for="age">Введите ваш возраст <em>*</em></label>
+            <input id="age" placeholder="Возраст" required /><br />
+            <label for="gender">Пол</label>
+            <select id="gender">
+                <option value="male">Мужчина</option>
+                <option value="female">Женщина</option>
+            </select><br />
+            <label for="sides">Ваши
+                личные
+                качества</label>
+            <textarea id="sides" cols="20" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Выберите ваших любимых животных</legend>
+            <label for="dog">Собака</label>
+            <input type="checkbox" name="dog" id="dog" />
+            <label for="cat">Кошка</label>
+            <input type="checkbox" name="cat" id="cat" />
+        </fieldset>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
